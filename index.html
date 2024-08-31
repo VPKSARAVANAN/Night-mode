@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Night Mode</title>
+  <style>
+  .day-mode {
+  background-color: #fff;
+  color: #000;
+}
+
+.night-mode {
+  background-color: #333;
+  color: #fff;
+}
+    body {
+  transition: background-color 0.5s, color 0.5s;
+    }
+  </style>
+</head>
+<body>
+  <center> <p>Welcome to my webpage</p></center>
+
+  
+  <button id="toggle-mode">Toggle Night Mode</button>
+
+  
+  <script >
+   
+   const toggleButton = document.getElementById('toggle-mode');
+const body = document.body;
+
+function toggleNightMode() {
+  body.classList.toggle('night-mode');
+}
+
+toggleButton.addEventListener('click', toggleNightMode);
+ </script>  
+
+</body>
+</html>
